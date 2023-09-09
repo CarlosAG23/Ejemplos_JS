@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <script src="../JavaScript/Reproductor.js"></script>
+    <Link rel="stylesheet" href="../css/Reproductor.css">
+    <title>Musica</title>
+    <script>
+        var visible = false;
+        function iniciar() {      
+            var elemento = document.getElementById("menu-img");
+            elemento.addEventListener("click", mostrarMenu);
+        }
+        function mostrarMenu() {
+            var elemento = document.getElementById("menuprincipal");
+            if (!visible) {
+                elemento.style.display = "block";
+                visible = true;
+            } else {
+                elemento.style.display = "none";
+                visible = false;
+            }
+        }
+        window.addEventListener("load", iniciar);
+    </script>
+</head>
+<body>
+    <header id="cabeceralogo">
+        <div>
+            <img src="../Imagenes/navlogo.png" alt= "Logo"class="imglogo">
+        </div>       
+    </header>
+    <nav id="menuicono">
+        <img src="../Imagenes/lista.png" width="40" height="32" id="menu-img">
+    </nav>
+    <nav id="menuprincipal">
+        <div>
+            <ul>
+                <li><a href="PaginaWeb.html">Inicio</a></li>
+                <li><a href="Contenido.html">Contenido</a></li>
+                <li><a href="QuienesSomos.html">Quienes Somos</a></li>
+                <li><a href="Reproductor.html">Musica</a></li>
+                <li><a href="Sugerenciasv2.html">Sugerencias</a></li>
+            </ul>            
+        </div> 
+    </nav>
+    <section id="reproductor">
+        <h2>Música</h2>
+        <video id="video" width="720" height="400">
+            <source src="../Videos/Musica.mp4">
+        </video>
+        <nav>
+            <div id="botones">
+            <input type="button" id="reproducir" value=">">
+            <input type="button" id="silenciar" value="Silenciar">
+        </div>
+            <div id="barra">
+            <div id="progreso"></div>    
+        </div>
+        <div id="control">
+            <input type="range" id="volumen" min="0" max="1" step="0.1" value="0.6">
+        </div>
+        <div class="recuperar"></div>
+        </nav>
+    </section>
+
+    <footer id="pielogo">
+        <div>
+            <section class="seccionpie">
+                <h1>Sitio Web</h1>
+                <p><a href="PaginaWeb.html">Inicio</a></p>
+                <p><a href="Contenido.html">Contenido</a></p>
+                <p><a href="Reproductor.html">Musica</a></p>
+            </section>
+            <section class="seccionpie">
+                <h1>Pregunatas Frecuentes</h1>
+                <p><a href="QuienesSomos.html">Quienes Somos</a></p>
+                <p><a href="Sugerenciasv2.html">Sugerencias</a></p>
+            </section>
+            <section class="seccionpie">
+                <address>Quito, Ecuador</address>
+                <small>&copy;Derechos reservado 2021</small>
+            </section>
+            <div class="recuperar"></div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,224 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+
+    font-family: "Seogeo UI Semibold", sans-serif;
+    background: #e6e6e6;
+    font-size: 14px;
+    background-image: linear-gradient(-225deg, #22E1FF 0%, #1D8FE1 48%, #625EB1 100%);
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+}
+h1 {
+    font-size: 18px;
+    margin: 15px 0;
+    color: rgb(63, 63, 218);
+}
+
+.secioformulario{
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr ;
+    margin: 20px 0;
+    background-color: rgba(243, 243, 243, 0.644);
+    padding: 30px 100px;
+    border-radius: 20px;
+}
+
+form .campos input {
+    width: 100%;
+    display: block;
+    margin-top: 8px;
+    padding: 8px;
+    font-size: 14px;
+    border-radius: 2px;
+    border: 1px solid #2181da;
+    margin-bottom: 18px;
+    
+}
+#mensaje{
+    width: 100%;
+    min-height: 100px;
+    max-width: 100px;
+    max-width: 100%;
+    max-height: 50%;
+}
+form p input{
+    display: block;
+    border: none;
+    min-width: 150px;
+    background-color: #2181da;
+    color: rgb(0, 0, 0);
+    border-radius: 25px;
+    margin: auto;
+    padding: 9px;
+}
+#terminos{
+    margin: 15px 0;	
+	font-weight: 70;
+	padding: 10px;
+	cursor: pointer;
+}
+
+
+.imglogo {
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    padding-bottom: 2px;
+    align-self: top;
+    width: 60%;
+    height: 60%;
+    display: block;
+    margin: auto;
+}
+
+#cabeceralogo {
+
+    width: 96%;
+    height: 150px;
+    padding: 0% 2%;
+
+}
+#cabeceralogo > div {
+    max-width: 960px;
+    margin: 0px auto;
+   
+}
+#cabeceralogo h1 {
+    font: bold 40px Arial, sans-serif;
+    color: #FFFFFF;
+}
+#menuprincipal {
+    width: 96%;
+    height: 50px;
+    padding: 0% 2%;
+    background: #528fd5;
+}
+#menuprincipal > div {
+    max-width: 960px;
+    margin: 0px auto;
+}
+#menuprincipal li {
+    display: inline-block;
+    height: 35px;
+    padding: 15px 10px 0px 10px;
+    margin-right: 5px;
+}
+#menuprincipal li:hover {
+    background: #237adf;
+}
+
+#menuprincipal a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    width: 96%;
+    padding: 2%;
+
+}
+main > div {
+    max-width: 960px;
+    margin: 0px auto;
+}
+
+
+
+
+.recuperar {
+    clear: both;
+}
+
+
+
+#pielogo {
+    width: 96%;
+    padding: 2%;
+
+}
+#pielogo > div {
+    color: rgb(102, 92, 92);
+    max-width: 960px;
+    margin: 0px auto;
+    border-radius: 24px;
+    -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(15px);
+    background-color: rgba(243, 243, 243,0.2);
+}
+.seccionpie {
+    float: left;
+    width: 27.33%;
+    padding: 3%;
+}
+.seccionpie h1 {
+    font: bold 20px Arial, sans-serif;
+}
+
+
+@media (max-width: 480px) {
+    #cabeceralogo > div {
+        text-align: center;
+    }
+    #cabeceralogo h1 {
+        font-family: "Seogeo UI Semibold", sans-serif;
+    }
+    #menuprincipal {
+        width: 100%;
+        height: 100%;
+        padding: 0%;
+    }
+    #menuprincipal li {
+    display: block;
+    margin-right: 0px;
+    text-align: center;
+    }
+    .seccionpie {
+    width: 94%;
+    text-align: center;
+    }
+}
+#menuicono {
+    display: none;
+    width: 95%;
+    height: 38px;
+    padding: 12px 2% 0px 3%;
+    background: #75acec;
+}
+
+@media (max-width: 480px) {
+    #menuprincipal {
+    display: none;
+    width: 100%;
+    height: 100%;
+    padding: 0%;
+    }
+    #menuprincipal li {
+    display: block;
+    margin-right: 0px;
+    text-align: center;
+    }
+    #menuicono {
+    display: block;
+    }
+    .seccionpie {
+    width: 94%;
+    text-align: center;
+    }
+    #cabeceralogo > div {
+    text-align: center;
+    }
+}
+   
+   

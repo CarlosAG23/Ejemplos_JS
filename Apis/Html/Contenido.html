@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/Contenido.css"> 
+
+    <title>Cool Tech</title>
+    <script>
+        var visible = false;
+        function iniciar() {      
+            var elemento = document.getElementById("menu-img");
+            elemento.addEventListener("click", mostrarMenu);
+        }
+        function mostrarMenu() {
+            var elemento = document.getElementById("menuprincipal");
+            if (!visible) {
+                elemento.style.display = "block";
+                visible = true;
+            } else {
+                elemento.style.display = "none";
+                visible = false;
+            }
+        }
+        window.addEventListener("load", iniciar);
+    </script>
+</head>
+<body>
+    <header id="cabeceralogo">
+        <div>
+            <img src="../Imagenes/navlogo.png" alt= "Logo"class="imglogo">
+        </div>       
+    </header>
+    <nav id="menuicono">
+        <img src="../Imagenes/lista.png" width="40" height="32" id="menu-img">
+    </nav>
+    <nav id="menuprincipal">
+        <div>
+            <ul>
+                <li><a href="PaginaWeb.html">Inicio</a></li>
+                <li><a href="Contenido.html">Contenido</a></li>
+                <li><a href="QuienesSomos.html">Quienes Somos</a></li>
+                <li><a href="Reproductor.html">Musica</a></li>
+                <li><a href="Sugerenciasv2.html">Sugerencias</a></li>
+            </ul>            
+        </div> 
+    </nav>
+    <main>
+        <div>
+            <section id="articulosprincipales">
+                <article>
+                    <h3>Apple lanza importantes parches de seguridad en iPhone, iPad, Mac y Watch.</h2>
+                    <p>Apple ha lanzado un conjunto de actualizaciones
+                        de seguridad para iPhone, iPad, Mac y Relojes. 
+                       No hay nuevas funciones, pero estas son 
+                       actualizaciones que aún querrá instalar.
+                       
+                       Como parte de estas correcciones de seguridad,
+                        los iPhones y iPads se actualizarán a iOS y iPadOS 14.4.1, 
+                       los usuarios de watchOS actualizarán a 7.3.2  y macOS 
+                       Big Sur se actualizarán a 11.2.3 . Aquellos en versiones 
+                       anteriores de macOS pueden instalar la última versión 
+                       de Safari, aumentando la versión a 14.0.3. 
+                    </p>
+                    <figure>
+                        <img src="../Imagenes/imgapple.jpg">
+                    </figure>
+                </article>
+                <article>
+                    <h3>Apple se une a Common Sense Media para seleccionar podcasts para niños.</h2>
+                    <p>Apple anunció esta mañana que se está asociando con
+                        Common Sense Media para seleccionar una selección
+                        de podcasts aptos para niños en los EE. UU. A la luz de
+                        lo que parece ser un creciente interés en el 
+                        entretenimiento de la palabra hablada entre las familias.
+                        Ese interés, en parte, puede haber sido motivado por 
+                        la pandemia y el deseo de los padres de reducir el tiempo
+                         de entretenimiento de los niños frente a la pantalla.
+                        
+                        Apple ha colaborado con Common Sense Media para 
+                        agrupar los podcasts por grupo de edad y por tema. 
+                        En el lanzamiento, la colección presenta a creadores 
+                        como Tinkercast, American Public Media, Gen-Z 
+                        Media, Pinna, Tumble, Highlights, WNYC Studios, 
+                        Rebel Girls y Nickelodeon, entre otros.                                             
+                    </p>
+                    <figure>
+                        <img src="../Imagenes/imgapplecommon.jpg" >
+                    </figure>
+                </article>
+            </section>
+            <aside id="infoadicional">
+                <h3>La aplicacion de TikTok esta dispobile en smartv para usuarios de USA.</h3>
+                <p>En diciembre, Samsung anunció  un nuevo acuerdo 
+                    con TikTok para permitir a los propietarios de 
+                    televisores inteligentes Samsung en Europa 
+                    ver clips de TikTok en sus televisores. Ahora, 
+                    la compañía ha confirmado que la misma 
+                    capacidad llegará a EE. UU., Con la mayoría 
+                    de sus televisores inteligentes 2021 capaces 
+                    de acceder a la aplicación conectada a TikTok.                    
+                </p>
+                <figure>
+                    <img src="../Imagenes/tiktoklogo.png" >
+                </figure>                
+            </aside>
+            
+            <div class="recuperar"></div>
+        </div>        
+    </main>
+    <footer id="pielogo">
+        <div>
+            <section class="seccionpie">
+                <h1>Sitio Web</h1>
+                <p><a href="PaginaWeb.html">Inicio</a></p>
+                <p><a href="Contenido.html">Contenido</a></p>
+                <p><a href="Reproductor.html">Musica</a></p>
+            </section>
+            <section class="seccionpie">
+                <h1>Pregunatas Frecuentes</h1>
+                <p><a href="QuienesSomos.html">Quienes Somos</a></p>
+                <p><a href="Sugerenciasv2.html">Sugerencias</a></p>
+            </section>
+            <section class="seccionpie">
+                <address>Quito, Ecuador</address>
+                <small>&copy;Derechos reservado 2021</small>
+            </section>
+            <div class="recuperar"></div>
+        </div>
+    </footer>
+</body>
+</html>

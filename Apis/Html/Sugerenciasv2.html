@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/Sugerenciasv2.css">
+    <title>Sugerencias</title>
+    <style>
+        input:optional{
+            border: 2px solid blue;
+        }
+        input:required{
+            border: 2px solid red;
+        }
+    </style>
+    <script>
+        var visible = false;
+        function iniciar() {      
+            var elemento = document.getElementById("menu-img");
+            elemento.addEventListener("click", mostrarMenu);
+        }
+        function mostrarMenu() {
+            var elemento = document.getElementById("menuprincipal");
+            if (!visible) {
+                elemento.style.display = "block";
+                visible = true;
+            } else {
+                elemento.style.display = "none";
+                visible = false;
+            }
+        }
+        var nombre1, nombre2;
+        function iniciar2(){
+            var boton = document.getElementById("Enviar");
+            boton.addEventListener("click", enviarformulario);
+            nombre1 = document.getElementById("nombre");
+            nombre2 = document.getElementById("apellido");
+            nombre1.addEventListener("input", validacion);
+            nombre2.addEventListener("input", validacion);
+            validacion();            
+        }
+        function enviarformulario(){
+            var formulario = document.querySelector("form[name='registrar']");
+            var valido = formulario.checkValidity();
+            if(valido){
+                formulario.submit();
+            }else{
+                alert("Complete los campos para enviar el formulario");
+            }
+        }
+        function validacion(){
+            if(nombre1.value == "" && nombre2.value == ""){
+                nombre1.setCustomValidity("Ingrese el nombre y el apellido");
+                nombre1.style.background = "#ffdddd";
+                nombre2.style.background = "#ffdddd";
+            }else{
+                nombre1.setCustomValidity("");
+                nombre1.style.background = "#ffffff";
+                nombre2.style.background = "#ffffff";
+            }
+        }
+        window.addEventListener("load", iniciar2);
+        window.addEventListener("load", iniciar);
+    </script>
+</head>
+<body>
+    <header id="cabeceralogo">
+        <div>
+            <img src="../Imagenes/navlogo.png" alt= "Logo"class="imglogo">
+        </div>       
+    </header>
+    <nav id="menuicono">
+        <img src="../Imagenes/lista.png" width="40" height="32" id="menu-img">
+    </nav>
+    <nav id="menuprincipal">
+        <div>
+            <ul>
+                <li><a href="PaginaWeb.html">Inicio</a></li>
+                <li><a href="Contenido.html">Contenido</a></li>
+                <li><a href="QuienesSomos.html">Quienes Somos</a></li>
+                <li><a href="Reproductor.html">Musica</a></li>
+                <li><a href="Sugerenciasv2.html">Sugerencias</a></li>
+            </ul>            
+        </div> 
+    </nav>
+
+    <section class="secioformulario"> 
+        <div class="form-wrapper">
+            <form name="registrar" action="procesar.php" method="get">            
+                <h1>Por favor, llene el siguiente formulario.</h1>            
+                <div class="campos">
+                    <label>Nombre:
+                        <input type="text" name="nombre" id="nombre" required>
+                    </label>
+                    <label>Apellido:
+                        <input type="text" name="apellido" id="apellido" required>
+                    </label>
+                    <label>Correo:
+                        <input type="email" name="correo" id="correo" required>
+                    </label>
+                    <label>Pais:
+                        <input type="text" name="pais" id="pais" required>
+                    </label>      
+                    <label>Asunto:
+                        <input type="text" name="asunto" id="asunto" required>
+                    </label>                    
+                    <textarea name="mensaje" id="mensaje" placeholder="Escriba un mensaje"></textarea>                                              
+                </div>
+                <div class="condiciones">
+                    <label>Acepto los terminos y condiciones.
+                        <input type="checkbox" name="terminos" id="terminos">
+                    </label>  
+                </div>
+                <p>
+                    <input type="submit" value="Enviar" id="Enviar">
+                </p>
+            </form>
+        </div>
+    </section>
+    <footer id="pielogo">
+        <div>
+            <section class="seccionpie">
+                <h1>Sitio Web</h1>
+                <p><a href="PaginaWeb.html">Inicio</a></p>
+                <p><a href="Contenido.html">Contenido</a></p>
+                <p><a href="Reproductor.html">Musica</a></p>
+            </section>
+            <section class="seccionpie">
+                <h1>Pregunatas Frecuentes</h1>
+                <p><a href="QuienesSomos.html">Quienes Somos</a></p>
+                <p><a href="Sugerenciasv2.html">Sugerencias</a></p>
+            </section>
+            <section class="seccionpie">
+                <address>Quito, Ecuador</address>
+                <small>&copy;Derechos reservado 2021</small>
+            </section>
+            <div class="recuperar"></div>
+        </div>
+    </footer>
+</body>
+</html>

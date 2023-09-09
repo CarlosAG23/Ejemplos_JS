@@ -1,0 +1,206 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: "Seogeo UI Semibold", sans-serif;
+    font-size: 14px;
+    background-image: linear-gradient(-225deg, #22E1FF 0%, #1D8FE1 48%, #625EB1 100%);
+    min-height: 100vh;
+    color: #000;
+}
+h2{
+    font-size: 38px;
+    margin: auto;
+    text-align:center;
+}
+#reproductor {
+    width: 720px;
+    margin: 20px auto;
+    padding: 10px 5px 5px 5px;
+    background-color: rgba(243, 243, 243, 0.808);
+    border: 1px solid #0571ff;
+    border-radius: 10px;
+}
+
+#reproducir, #silenciar {
+    padding: 4px 1px;
+    width: 60px;
+    border: 1px solid #281497;
+    background-color: rgba(243, 243, 243, 0.808);
+    border-radius: 12px;
+}
+
+nav {
+    margin: 5px 0px;
+}
+   
+#botones {
+    float: left;
+    width: 135px;
+    height: 35px;
+    padding-left: 4px;
+}
+
+#barra {
+    float: left;
+    width: 400px;
+    height: 10px;
+    padding: 3px;
+    margin: 2px 5px;
+    border: 1px solid #CCCCCC;
+    background: #EEEEEE;
+    border-radius: 15px;
+}
+#progreso {
+    width: 0px; 
+    height: 9px;
+    background: rgba(218, 27, 13, 0.959);
+    border-radius: 15px;
+}
+.recuperar {
+    clear: both;
+}
+
+
+/*unir*/
+.imglogo {
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    padding-bottom: 2px;
+    align-self: top;
+    width: 60%;
+    height: 60%;
+    display: block;
+    margin: auto;
+}
+
+#cabeceralogo {
+
+    width: 96%;
+    height: 150px;
+    padding: 0% 2%;
+
+}
+#cabeceralogo > div {
+    max-width: 960px;
+    margin: 0px auto;
+   
+}
+#cabeceralogo h1 {
+    font: bold 40px Arial, sans-serif;
+    color: #FFFFFF;
+}
+#menuprincipal {
+    width: 96%;
+    height: 50px;
+    padding: 0% 2%;
+    background: #528fd5;
+}
+#menuprincipal > div {
+    max-width: 960px;
+    margin: 0px auto;
+}
+#menuprincipal li {
+    display: inline-block;
+    height: 35px;
+    padding: 15px 10px 0px 10px;
+    margin-right: 5px;
+}
+#menuprincipal li:hover {
+    background: #237adf;
+}
+
+#menuprincipal a {
+    color: #fff;
+    text-decoration: none;
+}
+
+figure {
+    margin: 10px 0px;
+}
+figure img {
+    max-width: 98%;
+    padding: 1%;
+    border-radius: 25px;
+}
+#pielogo {
+    width: 96%;
+    padding: 2%;
+
+}
+#pielogo > div {
+    color: rgb(102, 92, 92);
+    max-width: 960px;
+    margin: 0px auto;
+    border-radius: 24px;
+    -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(15px);
+    background-color: rgba(243, 243, 243,0.2);
+}
+.seccionpie {
+    float: left;
+    width: 27.33%;
+    padding: 3%;
+}
+.seccionpie h1 {
+    font: bold 20px Arial, sans-serif;
+}
+
+
+@media (max-width: 480px) {
+    #cabeceralogo > div {
+        text-align: center;
+    }
+    #cabeceralogo h1 {
+        font-family: "Seogeo UI Semibold", sans-serif;
+    }
+    #menuprincipal {
+        width: 100%;
+        height: 100%;
+        padding: 0%;
+    }
+    #menuprincipal li {
+    display: block;
+    margin-right: 0px;
+    text-align: center;
+    }
+    .seccionpie {
+    width: 94%;
+    text-align: center;
+    }
+}
+#menuicono {
+    display: none;
+    width: 95%;
+    height: 38px;
+    padding: 12px 2% 0px 3%;
+    background: #75acec;
+}
+
+@media (max-width: 480px) {
+    #menuprincipal {
+    display: none;
+    width: 100%;
+    height: 100%;
+    padding: 0%;
+    }
+    #menuprincipal li {
+    display: block;
+    margin-right: 0px;
+    text-align: center;
+    }
+    #menuicono {
+    display: block;
+    }
+    .seccionpie {
+    width: 94%;
+    text-align: center;
+    }
+    #cabeceralogo > div {
+    text-align: center;
+    }
+}
+   
+   

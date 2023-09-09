@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/PaginaWeb.css"> 
+
+    <title>Cool Tech</title>
+    <script>
+        var visible = false;
+        function iniciar() {      
+            var elemento = document.getElementById("menu-img");
+            elemento.addEventListener("click", mostrarMenu);
+        }
+        function mostrarMenu() {
+            var elemento = document.getElementById("menuprincipal");
+            if (!visible) {
+                elemento.style.display = "block";
+                visible = true;
+            } else {
+                elemento.style.display = "none";
+                visible = false;
+            }
+        }
+        window.addEventListener("load", iniciar);
+    </script>
+</head>
+<body>
+    <header id="cabeceralogo">
+        <div>
+            <img src="../Imagenes/navlogo.png" alt= "Logo"class="imglogo">
+        </div>       
+    </header>
+    <nav id="menuicono">
+        <img src="../Imagenes/lista.png" width="40" height="32" id="menu-img">
+    </nav>
+    <nav id="menuprincipal">
+        <div>
+            <ul>
+                <li><a href="PaginaWeb.html">Inicio</a></li>
+                <li><a href="Contenido.html">Contenido</a></li>
+                <li><a href="QuienesSomos.html">Quienes Somos</a></li>
+                <li><a href="Reproductor.html">Musica</a></li>
+                <li><a href="Sugerenciasv2.html">Sugerencias</a></li>
+            </ul>            
+        </div> 
+    </nav>
+    <main>
+        <div>
+            <section id="articulosprincipales">
+                <article>
+                    <h2>Paypal adquiere una criptomoneda denominada Curv.</h2>
+                    <p>Este acuerdo hará crecer el equipo de criptomonedas 
+                        de PayPal al incorporar Curv , una startup que trabaja 
+                        con intercambios, corredores y escritorios de venta libre
+                         para ayudar a sus usuarios a almacenar criptoactivos 
+                        de forma segura y acceder a sus billeteras sin requerir 
+                        hardware adicional.
+                        
+                        La compañía más grande ya apoya la compra y venta
+                         de criptomonedas, y dice que planea lanzar 
+                        nuevos productos relacionados con las criptomonedas
+                         en otros países y en Venmo. Calcalist fue el primero
+                         en informar la adquisición , y dijo que el precio de la
+                         transacción estaba entre $ 200 y $ 300 millones, 
+                        mientras que otra fuente le dijo a TechCrunch que 
+                        el precio era menos de $ 200 millones.
+                    </p>
+                    <figure>
+                        <img src="../Imagenes/paypal.jpg">
+                    </figure>
+                </article>
+                <article>
+                    <h2>LinkedIn proporciona nuevas perspectivas de rendimiento para los especialistas en marketing.</h2>
+                    <p>LinkedIn ha compartido algunas ideas nuevas que,
+                        según dice, muestran que sus opciones publicitarias
+                        son más efectivas para los especialistas en marketing
+                        de educación superior que las campañas de difusión televisiva. 
+                       
+                       LinkedIn recientemente encargó a Nielsen que realizara
+                        un estudio para determinar mejor cómo los especialistas
+                        en marketing de educación superior pueden maximizar
+                        sus esfuerzos, que analizó diferentes enfoques promocionales
+                        y cómo la diversificación de la inversión publicitaria en los
+                        canales de medios puede ayudar a expandir el alcance de 
+                       la campaña (o no).                       
+                    </p>
+                    <figure>
+                        <img src="../Imagenes/linkedin.png" >
+                    </figure>
+                </article>
+            </section>
+            <aside id="infoadicional">
+                <h3>Google no proporcionará opciones de seguimiento de datos cuando se eliminen las cookies de terceros.</h3>
+                <p>
+                    Google aclaro hoy que, a pesar de la especulación y la discusión
+                    de la industria sobre reemplazos alternativos para las cookies de terceros 
+                    no proporcionar un medio para mantener el mismo nivel de seguimiento 
+                    de datos individuales una vez que las cookies desaparezcan.
+                </p>
+                <figure>
+                    <img src="../Imagenes/1366_2000.jpg" >
+                </figure>                
+            </aside>
+            
+            <div class="recuperar"></div>
+        </div>        
+    </main>
+    <footer id="pielogo">
+        <div>
+            <section class="seccionpie">
+                <h1>Sitio Web</h1>
+                <p><a href="PaginaWeb.html">Inicio</a></p>
+                <p><a href="Contenido.html">Contenido</a></p>
+                <p><a href="Reproductor.html">Musica</a></p>
+            </section>
+            <section class="seccionpie">
+                <h1>Pregunatas Frecuentes</h1>
+                <p><a href="QuienesSomos.html">Quienes Somos</a></p>
+                <p><a href="Sugerenciasv2.html">Sugerencias</a></p>
+            </section>
+            <section class="seccionpie">
+                <address>Quito, Ecuador</address>
+                <small>&copy;Derechos reservado 2021</small>
+            </section>
+            <div class="recuperar"></div>
+        </div>
+    </footer>
+</body>
+</html>

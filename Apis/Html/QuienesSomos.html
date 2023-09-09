@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/QuienesSomos.css"> 
+
+    <title>Quienes Somos</title>
+    <script>
+        var visible = false;
+        function iniciar() {      
+            var elemento = document.getElementById("menu-img");
+            elemento.addEventListener("click", mostrarMenu);
+        }
+        function mostrarMenu() {
+            var elemento = document.getElementById("menuprincipal");
+            if (!visible) {
+                elemento.style.display = "block";
+                visible = true;
+            } else {
+                elemento.style.display = "none";
+                visible = false;
+            }
+        }
+        window.addEventListener("load", iniciar);
+    </script>
+</head>
+<body>
+    <header id="cabeceralogo">
+        <div>
+            <img src="../Imagenes/navlogo.png" alt= "Logo"class="imglogo">
+        </div>       
+    </header>
+    <nav id="menuicono">
+        <img src="../Imagenes/lista.png" width="40" height="32" id="menu-img">
+    </nav>
+    <nav id="menuprincipal">
+        <div>
+            <ul>
+                <li><a href="PaginaWeb.html">Inicio</a></li>
+                <li><a href="Contenido.html">Contenido</a></li>
+                <li><a href="QuienesSomos.html">Quienes Somos</a></li>
+                <li><a href="Reproductor.html">Musica</a></li>
+                <li><a href="Sugerenciasv2.html">Sugerencias</a></li>
+            </ul>            
+        </div> 
+    </nav>
+    <main>
+        <div>
+            <section id="articulosprincipales">
+                <article>
+                    <h2>¿Quiénes somos?</h2>
+                    <p>Este es un sitio web diseñado para 
+                        compartir noticias relacionados a 
+                        la tecnología e informática.
+                    </p>
+                </article>
+                <article>
+                    <h2>¿Ofrecen alguna suscripción de noticias?</h2>
+                    <p>
+                        Por el momento las suscripciones de noticias
+                         por correo no se encuentran habilitadas para
+                         todos los usuarios.                     
+                    </p>
+                </article>
+                <article>
+                    <h2>¿Cuál es la finalidad de esta página web?</h2>
+                    <p>
+                        El sitio web tiene la finalidad de informar 
+                        todos los cambios tecnológicos actuales.                      
+                    </p>
+                </article>  
+            </section>
+            <aside id="infoadicional">
+                <h3>Para mas informacion puedes seguir nuestras redes sociales.</h3>
+                <p><br>-Facebook.<br>
+                    -Instagram.<br>
+                    -Twitter.<br>
+                    -Reddit.
+                </p>     
+                <figure>
+                    <img src="../Imagenes/socialmedia.jpg" >
+                </figure>                
+            </aside>            
+            <div class="recuperar"></div>
+        </div>        
+    </main>
+    <footer id="pielogo">
+        <div>
+            <section class="seccionpie">
+                <h1>Sitio Web</h1>
+                <p><a href="PaginaWeb.html">Inicio</a></p>
+                <p><a href="Contenido.html">Contenido</a></p>
+                <p><a href="Reproductor.html">Musica</a></p>
+            </section>
+            <section class="seccionpie">
+                <h1>Pregunatas Frecuentes</h1>
+                <p><a href="QuienesSomos.html">Quienes Somos</a></p>
+                <p><a href="Sugerenciasv2.html">Sugerencias</a></p>
+            </section>
+            <section class="seccionpie">
+                <address>Quito, Ecuador</address>
+                <small>&copy;Derechos reservado 2021</small>
+            </section>
+            <div class="recuperar"></div>
+        </div>
+    </footer>
+</body>
+</html>
