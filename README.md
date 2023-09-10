@@ -1,4 +1,4 @@
-# Ejemplos_JS
+# Ejemplos con JavaScript
 
 
 ![operacioens1](https://github.com/CarlosAG23/Ejemplos_JS/assets/67843396/efccb0d5-04d0-4cdb-b1e3-947141558f16)
